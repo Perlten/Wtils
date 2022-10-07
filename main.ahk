@@ -4,9 +4,8 @@ DllCall( "RegisterShellHookWindow", UInt,Hwnd )
 OnMessage(DllCall("RegisterWindowMessage", Str,"SHELLHOOK"), "windowAlteration")
 
 Print(string){
-	ToolTip `n%string%
+  ToolTip `n%string%
 }
-
 
 centerMouseOnActiveWindow(){
   CoordMode,Mouse,Screen
@@ -26,6 +25,42 @@ windowAlteration(wParam, lParam){
   }
 }
 
-#9::
-  print("test2c")
+#1::
+  SendInput, {LWinDown}{1}{LWinUp}
+return
+
+!1::
+  SendInput, {LWinDown}{2}{LWinUp}
+return
+
+#2::
+  SendInput, {LWinDown}{3}{LWinUp}
+return
+
+!2::
+  SendInput, {LWinDown}{4}{LWinUp}
+return
+
+#3::
+  SendInput, {LWinDown}{5}{LWinUp}
+return
+
+!3::
+  SendInput, {LWinDown}{6}{LWinUp}
+return
+
+#4::
+  SendInput, {LWinDown}{7}{LWinUp}
+return
+
+!4::
+  SendInput, {LWinDown}{8}{LWinUp}
+return
+
+#5::
+  SendInput, {LWinDown}{9}{LWinUp}
+return
+
+#+q::
+  SendInput, {AltDown}{F4}{AltUp}
 return
