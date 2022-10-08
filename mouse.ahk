@@ -4,14 +4,6 @@ SendMode, Input
 SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
-#Persistent
-; Vars
-is_left_pressed := false
-
-; Event loop
-SetTimer, CheckForKeyMouse, 7
-return
-
 CheckForKeyMouse:
     if (GetKeyState("AppsKey", "P")) {
         ; Mouse speed

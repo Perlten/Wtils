@@ -4,11 +4,6 @@ SendMode, Input
 SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
-Gui, +LastFound
-hWnd := WinExist()
-DllCall( "RegisterShellHookWindow", UInt,Hwnd )
-OnMessage(DllCall("RegisterWindowMessage", Str,"SHELLHOOK"), "windowAlteration")
-
 Print(string){
   ToolTip `n%string%
 }
