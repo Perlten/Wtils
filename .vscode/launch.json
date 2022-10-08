@@ -7,8 +7,22 @@
         {
             "type": "ahk",
             "request": "launch",
-            "name": "AutoHotkey Debugger",
+            "name": "Debug Main",
             "program": "${workspaceFolder}/main.ahk",
+            "stopOnEntry": true
+        },
+        {
+            "type": "ahk",
+            "request": "launch",
+            "name": "Debug windowSwitch",
+            "program": "${workspaceFolder}/windowSwitch.ahk",
+            "stopOnEntry": true
+        },
+        {
+            "type": "ahk",
+            "request": "launch",
+            "name": "Debug Mouse",
+            "program": "${workspaceFolder}/mouse.ahk",
             "stopOnEntry": true
         }
     ]
