@@ -7,8 +7,12 @@ SetWorkingDir, %A_ScriptDir%
 CheckForKeyMouse:
     if (is_mouse_key_pressed && !GetKeyState("n", "P")) {
         current_time := A_TickCount
-        if ((current_time - mouse_key_pressed_time) < 100 ) {
-            Send {n}
+        if ((current_time - mouse_key_pressed_time) < 200 ) {
+            if (GetKeyState("shift", "P")){
+                Send N
+            }else {
+                Send n
+            }
         }
         mouse_key_pressed_time := ""
         is_mouse_key_pressed := false
@@ -80,5 +84,3 @@ n & s::return
 
 n & space::return
 n & k::return
-n & shift::return
-n & l::return
