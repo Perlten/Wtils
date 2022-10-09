@@ -15,9 +15,10 @@ SetWorkingDir, %A_ScriptDir%
 !+x::Send, {_}
 !+s::Send, {:}
 !+j::Send, {"}
-!+n::Send, {@}
+!+m::Send, {@}
 !+g::Send, {$}
 !+r::Send, {/}
+!+w::Send, {-}
 
 !^l::Send, { End }
 !^h::Send, { Home }

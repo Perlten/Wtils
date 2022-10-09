@@ -25,12 +25,12 @@ CheckForKeyMouse:
         }
 
         ; Mouse speed
-        speed := 20
+        speed := 25
         if GetKeyState("k", "P"){
             speed := 4
         }
         if GetKeyState("shift", "P"){
-            speed := 35
+            speed := 40
         }
 
         ; Scroll
