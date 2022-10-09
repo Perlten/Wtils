@@ -22,3 +22,4 @@ return
 
 #Include mouse.ahk
 #Include windowSwitch.ahk
+#Include remaps.ahk
