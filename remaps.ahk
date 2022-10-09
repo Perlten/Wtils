@@ -14,7 +14,15 @@ SetWorkingDir, %A_ScriptDir%
 !+v::Send, {]}
 !+x::Send, {_}
 !+s::Send, {:}
+!+j::Send, {"}
+!+n::Send, {@}
+!+g::Send, {$}
+!+r::Send, {/}
 
 !^l::Send, { End }
 !^h::Send, { Home }
-
+!^k::Send, { Up }
+!^j::Send, { Down }
+!^w::Send, { Enter }
+!^s::Send, { BackSpace }
+!^q::Send, { Esc }
