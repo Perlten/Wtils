@@ -27,3 +27,8 @@ SetWorkingDir, %A_ScriptDir%
 !^w::Send, { Enter }
 !^s::Send, { BackSpace }
 !^q::Send, { Esc }
+
+!^d::Send, {AltDown}{Right}{AltUp}
+!^a::Send, {AltDown}{Left}{AltUp}
+
+#+q::SendInput, {AltDown}{F4}{AltUp}
