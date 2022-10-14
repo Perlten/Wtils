@@ -5,20 +5,7 @@ SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
 CheckForKeyMouse:
-    if (is_mouse_key_pressed && !GetKeyState("n", "P")) {
-        current_time := A_TickCount
-        if ((current_time - mouse_key_pressed_time) < 200 ) {
-            if (GetKeyState("shift", "P")){
-                Send N
-            }else {
-                Send n
-            }
-        }
-        mouse_key_pressed_time := ""
-        is_mouse_key_pressed := false
-    }
-
-    if (GetKeyState("n", "P")) {
+    if (GetKeyState("-", "P")) {
         if (!mouse_key_pressed_time) {
             is_mouse_key_pressed := true
             mouse_key_pressed_time := A_TickCount
@@ -26,7 +13,7 @@ CheckForKeyMouse:
 
         ; Mouse speed
         speed := 25
-        if GetKeyState("k", "P"){
+        if GetKeyState(",", "P"){
             speed := 4
         }
         if GetKeyState("shift", "P"){
@@ -67,7 +54,7 @@ CheckForKeyMouse:
             is_left_pressed := False
             MouseClick , Left, 0, 0, 1, 0, U, Relative
         }
-        if (GetKeyState("l", "P")) {
+        if (GetKeyState(".", "P")) {
             MouseClick, Right
             Sleep, 150
         }
@@ -75,12 +62,12 @@ CheckForKeyMouse:
     }
 return
 
-n::return
+-::return
 
-n & a::return
-n & d::return
-n & w::return
-n & s::return
+- & a::return
+- & d::return
+- & w::return
+- & s::return
 
-n & space::return
-n & k::return
+- & space::return
+- & k::return

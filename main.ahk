@@ -16,5 +16,9 @@ SetTimer, CheckForKeyMouse, 7
 
 return
 
+print(string){
+    ToolTip `n%string%
+}
+
 #Include mouse.ahk
 #Include remaps.ahk
