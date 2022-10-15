@@ -8,8 +8,6 @@ SetWorkingDir, %A_ScriptDir%
 ; ------ Mouse ------
 ; Vars
 is_left_pressed := false
-is_mouse_key_pressed := false
-mouse_key_pressed_time := ""
 
 ; Event loop
 SetTimer, CheckForKeyMouse, 7

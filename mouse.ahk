@@ -6,11 +6,6 @@ SetWorkingDir, %A_ScriptDir%
 
 CheckForKeyMouse:
     if (GetKeyState("-", "P")) {
-        if (!mouse_key_pressed_time) {
-            is_mouse_key_pressed := true
-            mouse_key_pressed_time := A_TickCount
-        }
-
         ; Mouse speed
         speed := 25
         if GetKeyState(",", "P"){
