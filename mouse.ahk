@@ -8,7 +8,7 @@ CheckForKeyMouse:
     if (GetKeyState("-", "P")) {
         ; Mouse speed
         speed := 25
-        if GetKeyState(",", "P"){
+        if GetKeyState("j", "P"){
             speed := 4
         }
         if GetKeyState("shift", "P"){
@@ -49,7 +49,7 @@ CheckForKeyMouse:
             is_left_pressed := False
             MouseClick , Left, 0, 0, 1, 0, U, Relative
         }
-        if (GetKeyState(".", "P")) {
+        if (GetKeyState("k", "P")) {
             MouseClick, Right
             Sleep, 150
         }
@@ -65,5 +65,5 @@ return
 - & s::return
 
 - & space::return
-- & ,::return
-- & .::return
+- & j::return
+- & k::return
