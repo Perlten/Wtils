@@ -1,4 +1,4 @@
-#NoEnv
+﻿#NoEnv
 #SingleInstance, Force
 SendMode, Input
 SetBatchLines, -1
@@ -20,6 +20,7 @@ SetWorkingDir, %A_ScriptDir%
 !+r::Send, {/}
 !+w::Send, {-}
 !+a::Send, {`;}
+!+æ::Send, {æ}
 
 !^c::Send, { End }
 !^x::Send, { Home }

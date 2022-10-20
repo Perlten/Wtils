@@ -1,11 +1,11 @@
-#NoEnv
+﻿#NoEnv
 #SingleInstance, Force
 SendMode, Input
 SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
 CheckForKeyMouse:
-    if (GetKeyState("-", "P")) {
+    if (GetKeyState("æ", "P")) {
         ; Mouse speed
         speed := 25
         if GetKeyState("j", "P"){
@@ -57,13 +57,13 @@ CheckForKeyMouse:
     }
 return
 
--::return
+æ::return
 
-- & a::return
-- & d::return
-- & w::return
-- & s::return
+æ & a::return
+æ & d::return
+æ & w::return
+æ & s::return
 
-- & space::return
-- & j::return
-- & k::return
+æ & space::return
+æ & j::return
+æ & k::return
