@@ -4,24 +4,6 @@ SendMode, Input
 SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
-!+k::Send, {{}
-!+l::Send, {}}
-!+d::Send, {(}
-!+f::Send, {)}
-!+e::Send, {=}
-!+q::Send, {!}
-!+c::Send, {[}
-!+v::Send, {]}
-!+x::Send, {_}
-!+s::Send, {:}
-!+j::Send, {"}
-!+m::Send, {@}
-!+g::Send, {$}
-!+r::Send, {/}
-!+w::Send, {-}
-!+a::Send, {`;}
-!+æ::Send, {æ}
-
 !^c::Send, { End }
 !^x::Send, { Home }
 
@@ -38,3 +20,25 @@ SetWorkingDir, %A_ScriptDir%
 !^a::Send, {AltDown}{Left}{AltUp}
 
 #+q::SendInput, {AltDown}{F4}{AltUp}
+
+#^u::Send, {Media_Prev}
+#^i::Send, {Media_Play_Pause}
+#^o::Send, {Media_Next}
+
+!+k::Send, {{}
+!+l::Send, {}}
+!+d::Send, {(}
+!+f::Send, {)}
+!+e::Send, {=}
+!+q::Send, {!}
+!+c::Send, {[}
+!+v::Send, {]}
+!+x::Send, {_}
+!+s::Send, {:}
+!+j::Send, {"}
+!+m::Send, {@}
+!+g::Send, {$}
+!+r::Send, {/}
+!+w::Send, {-}
+!+æ::Send, {æ}
+!+a::Send, {`;}
