@@ -46,12 +46,21 @@ CheckForKeyMouse:
             MouseClick , Left, 0, 0, 1, 0, D, Relative
             is_left_pressed := true
         }else if(is_left_pressed && !GetKeyState("space", "P")) {
-            is_left_pressed := False
+            is_left_pressed := false
             MouseClick , Left, 0, 0, 1, 0, U, Relative
         }
+
         if (GetKeyState("k", "P")) {
             MouseClick, Right
             Sleep, 150
+        }
+
+        if (!is_middle_pressed && GetKeyState("i", "P")) {
+            MouseClick , Middle, 0, 0, 1, 0, D, Relative
+            is_middle_pressed := true
+        }else if(is_middle_pressed && !GetKeyState("i", "P")) {
+            is_middle_pressed := false
+            MouseClick , Middle, 0, 0, 1, 0, U, Relative
         }
 
     }
@@ -63,6 +72,7 @@ return
 æ & d::return
 æ & w::return
 æ & s::return
+æ & i::return
 
 æ & space::return
 æ & j::return
