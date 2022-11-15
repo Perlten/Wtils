@@ -24,6 +24,9 @@ SetWorkingDir, %A_ScriptDir%
 #^u::Send, {Media_Prev}
 #^i::Send, {Media_Play_Pause}
 #^o::Send, {Media_Next}
+#^n::SoundSet, +5
+#^b::SoundSet, -5
+#^m::SoundSet, +1, , mute 
 
 !+k::Send, {{}
 !+l::Send, {}}
